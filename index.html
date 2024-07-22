@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav{
+            display: flex;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            font-size: larger;
+            background-color: beige;
+            padding: 10px;
+            color: rgb(132, 10, 10);
+        }
+        .nav img{
+            height: 40px;
+            margin-top: 16px;
+        }
+        .navu{
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+        .footer{
+            margin-top: 150px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+        }
+        #hehe{
+            background-color: white;
+            border: 1px solid black;
+        }
+        .socials{
+            display: flex;
+            height: 40px;
+        }
+        /* Media Queries */
+        @media only screen and (max-width: 1200px) {
+            .flex img {
+                width: 250px;
+                height: 350px;
+            }
+        }
+        @media only screen and (max-width: 900px) {
+            .flex img {
+                width: 200px;
+                height: 280px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .flex {
+                flex-direction: column;
+            }
+            .flex img {
+                width: 100%;
+                height: 400px;
+            }
+            .nav {
+                flex-direction: column;
+            }
+            .navu {
+               font-size: small;
+                
+            }
+            .navu img{
+              width: 50px;
+              align-items: center;
+            }
+            .socials {
+                flex-direction: column;
+            }
+            .socials img {
+                margin-bottom: 10px;
+                width: 10%;
+                height: 100px;
+                
+            }
+        }
+        .navu{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .navu li{
+            display: inline-block;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(255, 255, 172)">
+    <div>
+        <center> <img src="Screenshot_2024-07-21_161349-removebg-preview.png" height="90px"></center> 
+    </div>
+    <nav class="nav">
+        <img src="image-removebg-preview.png"> 
+        <div class="navu">
+          <ul> <a href="menu.html"> <li>Cafe Menu</li></a>
+            <a href="order.html"> <li>  Order Online</li></a>
+            <li>  Store</li>
+            <li>  Gift</li></ul>
+        </div>
+    </nav>
+    <div class="flex">
+        <img src="Screenshot 2024-07-21 162746.png" height="420px" width="340px">
+        <img src="Screenshot 2024-07-21 162222.png" width="280px" height="420px">
+        <img src="Screenshot 2024-07-21 162427.png" width="280px" height="420px">
+        <img src="Screenshot 2024-07-21 162351.png" width="280px" height="420px">
+        <img src="Screenshot 2024-07-21 162312.png" width="280px" height="420px">
+    </div>
+    <center><div class="socials"><img src="logo-computer-icons-clip-art-instagram-layout-removebg-preview (1).png">
+        <img src="png-clipart-twitter-twitter-thumbnail-removebg-preview.png"></div></center>
+    <center><footer class="footer">
+        <div id="hehe">
+            &ensp;
+        </div>Contact Us - 9499391455 <br>
+        Address - Chitkara University, Punjab, India <br>
+        Email us at - prabhjot1591.be23@chitkara.edu.in
+    </footer></center>
+</body>
+</html>
